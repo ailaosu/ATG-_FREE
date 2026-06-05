@@ -558,7 +558,7 @@ function generateRooms(){
   const statusPool = ["活躍中", "蓄勢期", "平穩期", "觀察期"];
   let selectedRooms = [];
   while(selectedRooms.length < 6) {
-    let rNum = Math.floor(Math.random() * 273) + 1;
+    let rNum = Math.floor(Math.random() * 3499) + 1;
     let formatted = String(rNum).padStart(3, '0');
     if(!selectedRooms.includes(formatted)) selectedRooms.push(formatted);
   }
